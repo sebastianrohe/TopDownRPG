@@ -1,0 +1,1597 @@
+fileFormatVersion: 2
+guid: 097648a43985c484788339dd8df91aa1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f8daf8e39dfd94d98c0b242264b087
+      internalID: 945194097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fef8fc08aedff42bce8119df584860
+      internalID: 1703159681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_2
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9144b7cc0f6d4a3438be707bf376573b
+      internalID: 624357941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_3
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550642678288c6649b49051218698426
+      internalID: 508232813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_4
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f54d31b43d92254b885c4589b325b17
+      internalID: -1259618932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_5
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfe392eb78e31c47ad0dd1452b5c906
+      internalID: -1705353197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_6
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edc307f11b4dbc45bb08489e934cb20
+      internalID: 1207878687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_7
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 768
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2072a6cfe36964abed9ab033179b3d
+      internalID: -782424628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f05cc8df30d35e419f147b86ea2e7bc
+      internalID: 1640822480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e087e479ebe85f540810aad374d73e4e
+      internalID: -841913201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_10
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4d092e249001743b3fad65b69a4294
+      internalID: 589776649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_11
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92982d761eb80e94b978de05a640d19c
+      internalID: 1904457113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_12
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4dd55329f61d2499e76cb20c300175
+      internalID: -453743392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_13
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6639304d2859bad47b6b5bc012501947
+      internalID: 28743726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_14
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354851379a90dca47bfb506e809e3c52
+      internalID: 1091144437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_15
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 576
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d78ea492900af4182e67e0f5aa7cb0
+      internalID: 1900811579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e737c06933c9cf4aaece62f648449e5
+      internalID: -2116585435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_17
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b03c6bfadf679e409945f71df56b6ca
+      internalID: 523022537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_18
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148d7bab687c8c94b8679a53143c0dd1
+      internalID: -1597451339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_19
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b79aa0c073a8bb4ea6e00488b98f97e
+      internalID: 1047648726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_20
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfa109eaff729b4f8394366f3be81ae
+      internalID: 1452752908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_21
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a0d90f815b4814d9be7df1f018bd26
+      internalID: -877813749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_22
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745c9205049a77a4b8264b0741b1c734
+      internalID: -704736880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_23
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335e160330220b64a89f198f8204ca12
+      internalID: 858491934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_24
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1913c21f105dbd4d804f396a8dddeca
+      internalID: 1120431319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_25
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bddbce0f03219745827cbb1563b81c3
+      internalID: 349709083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_26
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03b67875ede6494295b24db9840924b
+      internalID: 509802297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_27
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00973ffaf537af04ab627da9b581517f
+      internalID: -1686483954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_28
+      rect:
+        serializedVersion: 2
+        x: 4164
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77a50b278ad9324dbe4b2371fb01c1f
+      internalID: 728213985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_29
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f461b1a7ffca784fb5d5586fa6cc392
+      internalID: 1874899267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_30
+      rect:
+        serializedVersion: 2
+        x: 4858
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1de68b6888d094680b4c790038370d
+      internalID: -951892002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_31
+      rect:
+        serializedVersion: 2
+        x: 5205
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019ad6d408d5c994592af5540b3e30e0
+      internalID: -1785927695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_32
+      rect:
+        serializedVersion: 2
+        x: 5552
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96fb82cee0d44644a4cf93809439b4c
+      internalID: -1362433463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_33
+      rect:
+        serializedVersion: 2
+        x: 5899
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54df27c7b0e83c46bf95d8623d6fa8a
+      internalID: -669308995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_34
+      rect:
+        serializedVersion: 2
+        x: 6246
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a7b3b361fc08745952bbf6b67cabb2
+      internalID: 544146848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_35
+      rect:
+        serializedVersion: 2
+        x: 6593
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d8d231b93372a43b849ebfcbae838e
+      internalID: -1890588984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_36
+      rect:
+        serializedVersion: 2
+        x: 6940
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed2a1d2c495b7149a33dd1c51d4ce48
+      internalID: 689359138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_37
+      rect:
+        serializedVersion: 2
+        x: 7287
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589d3dfe4a405d641a26eae135625ab5
+      internalID: 483206355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_38
+      rect:
+        serializedVersion: 2
+        x: 7634
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba18fa8e717ed14590d2e0ef26d77ff
+      internalID: -194030483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_39
+      rect:
+        serializedVersion: 2
+        x: 7981
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5531f44f5e4d3db42868ffd7a16c6b75
+      internalID: 1797790964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_40
+      rect:
+        serializedVersion: 2
+        x: 8328
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e88d08e6360b24882e98da0914dab2
+      internalID: -1121279967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_41
+      rect:
+        serializedVersion: 2
+        x: 8675
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d8ddc408564bc44a750c992325f9fb
+      internalID: -866795445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_42
+      rect:
+        serializedVersion: 2
+        x: 9022
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c48e46265d5ba74dbbd87351ef4905f
+      internalID: 1916956307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_43
+      rect:
+        serializedVersion: 2
+        x: 9369
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3645bbc38367158479bcd3e8dbb36f6c
+      internalID: -1340354071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_44
+      rect:
+        serializedVersion: 2
+        x: 9716
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9c97e0e15824a468273ba2d22607ae
+      internalID: 114843856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_45
+      rect:
+        serializedVersion: 2
+        x: 10063
+        y: 384
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f5286a24800774a9499bdee6fee6b4
+      internalID: 508601511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f07d16432790084db1c3963ca9c90bb
+      internalID: -1170084229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_47
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fb1ae61e94adf4b84c08c43ebefd43
+      internalID: -1401851227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_48
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb9b318caeef34498eaaf865d7715d6
+      internalID: 1339248850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_49
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4be27589baf0de498b6ac57d8eef13f
+      internalID: 1906157839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_50
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e214aaaca95562d4c852baa948271737
+      internalID: -1469314028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_51
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 192
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537d683aada39224d8b3e7f3af261b22
+      internalID: -1410119552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4b4db29b590f54391290c194e6a16c
+      internalID: 909320753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_53
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3994617c511dc294d9bb9da29dd30fa1
+      internalID: 2088883170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_54
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d749a761f269a458b4e07f6ea86109
+      internalID: 2136583184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_55
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f24d03e86edec5448b9298b1a3f6d9e
+      internalID: -104924813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_56
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a767c5304f52fe45aabbab42e8e7f9b
+      internalID: 629291012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_57
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5544ed27216cd0a4e9b006541e63d006
+      internalID: -731704124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_58
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b354ac2038a25489db28305ea5fe70
+      internalID: 2008741203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_59
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a256a757d15d10f47b07c9fc02bcb5a5
+      internalID: -1005389548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_60
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2470f1f6a5763d444b4a581e6853e171
+      internalID: 2130701474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_61
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7ac48364bce3449a24de90de22a496
+      internalID: 181397193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_62
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d55be4c28f5d44f9377d021dbe98cc
+      internalID: 1925247280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_63
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7987334cd85f5664397521e0185fc86f
+      internalID: -333491496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_64
+      rect:
+        serializedVersion: 2
+        x: 4164
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a2a9b68ebd1c44d9e3ab5d42f15ce2
+      internalID: -733558525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_65
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5752e54929591a04f9883786c89707dd
+      internalID: -1561700556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moose3-all animations-347x192_66
+      rect:
+        serializedVersion: 2
+        x: 4858
+        y: 0
+        width: 347
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c783076e46723ea48ad4f1410c2cf0fd
+      internalID: 1579861728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      moose3-all animations-347x192_66: 1579861728
+      moose3-all animations-347x192_40: -1121279967
+      moose3-all animations-347x192_57: -731704124
+      moose3-all animations-347x192_36: 689359138
+      moose3-all animations-347x192_1: 1703159681
+      moose3-all animations-347x192_59: -1005389548
+      moose3-all animations-347x192_63: -333491496
+      moose3-all animations-347x192_28: 728213985
+      moose3-all animations-347x192_2: 624357941
+      moose3-all animations-347x192_8: 1640822480
+      moose3-all animations-347x192_12: -453743392
+      moose3-all animations-347x192_31: -1785927695
+      moose3-all animations-347x192_20: 1452752908
+      moose3-all animations-347x192_19: 1047648726
+      moose3-all animations-347x192_54: 2136583184
+      moose3-all animations-347x192_0: 945194097
+      moose3-all animations-347x192_3: 508232813
+      moose3-all animations-347x192_11: 1904457113
+      moose3-all animations-347x192_50: -1469314028
+      moose3-all animations-347x192_39: 1797790964
+      moose3-all animations-347x192_60: 2130701474
+      moose3-all animations-347x192_23: 858491934
+      moose3-all animations-347x192_32: -1362433463
+      moose3-all animations-347x192_49: 1906157839
+      moose3-all animations-347x192_45: 508601511
+      moose3-all animations-347x192_9: -841913201
+      moose3-all animations-347x192_25: 349709083
+      moose3-all animations-347x192_22: -704736880
+      moose3-all animations-347x192_35: -1890588984
+      moose3-all animations-347x192_14: 1091144437
+      moose3-all animations-347x192_44: 114843856
+      moose3-all animations-347x192_34: 544146848
+      moose3-all animations-347x192_51: -1410119552
+      moose3-all animations-347x192_6: 1207878687
+      moose3-all animations-347x192_61: 181397193
+      moose3-all animations-347x192_21: -877813749
+      moose3-all animations-347x192_27: -1686483954
+      moose3-all animations-347x192_37: 483206355
+      moose3-all animations-347x192_17: 523022537
+      moose3-all animations-347x192_33: -669308995
+      moose3-all animations-347x192_43: -1340354071
+      moose3-all animations-347x192_16: -2116585435
+      moose3-all animations-347x192_48: 1339248850
+      moose3-all animations-347x192_58: 2008741203
+      moose3-all animations-347x192_53: 2088883170
+      moose3-all animations-347x192_46: -1170084229
+      moose3-all animations-347x192_55: -104924813
+      moose3-all animations-347x192_30: -951892002
+      moose3-all animations-347x192_52: 909320753
+      moose3-all animations-347x192_5: -1705353197
+      moose3-all animations-347x192_15: 1900811579
+      moose3-all animations-347x192_47: -1401851227
+      moose3-all animations-347x192_24: 1120431319
+      moose3-all animations-347x192_13: 28743726
+      moose3-all animations-347x192_10: 589776649
+      moose3-all animations-347x192_38: -194030483
+      moose3-all animations-347x192_42: 1916956307
+      moose3-all animations-347x192_62: 1925247280
+      moose3-all animations-347x192_65: -1561700556
+      moose3-all animations-347x192_64: -733558525
+      moose3-all animations-347x192_56: 629291012
+      moose3-all animations-347x192_41: -866795445
+      moose3-all animations-347x192_18: -1597451339
+      moose3-all animations-347x192_29: 1874899267
+      moose3-all animations-347x192_26: 509802297
+      moose3-all animations-347x192_4: -1259618932
+      moose3-all animations-347x192_7: -782424628
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
