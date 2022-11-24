@@ -17,8 +17,7 @@ public class Golem : MonoBehaviour
             health = value;
           
             if(health <= 0) {
-                animator.SetBool("isAlive", false);
-                //Destroy(gameObject);
+                animator.SetBool("isAlive", false);              
             }
         }
         get {
@@ -36,5 +35,9 @@ public class Golem : MonoBehaviour
     void OnHit(float damage) {
         Health -= damage;
         //Debug.LogWarning("Golem hit" + damage);
+    }
+
+    void DespawnGolem() {
+        Destroy(gameObject);
     }
 }

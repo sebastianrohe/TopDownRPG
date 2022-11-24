@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     public GameObject hammerHitbox;
     Collider2D hammerCollider;
 
-
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
