@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         hammerCollider = hammerHitbox.GetComponent<Collider2D>();
+        animator.SetBool("isAlive", isAlive);
     }
 
     void FixedUpdate() {
@@ -59,8 +60,32 @@ public class PlayerController : MonoBehaviour
             IsMoving = false;
         }
     }
+    bool isAlive = true;
 
+    public float Health {
+        set {
 
+            if (value < health) {
+                animator.SetTrigger("hit");
+            }
+
+            health = value;
+
+            if (health <= 0) {
+                animator.SetBool("isAlive", false);
+            }
+        }
+        get {
+            return health;
+        }
+    }
+
+    public float health = 3;
+
+    void OnHit(float damage) {
+        Health -= damage;
+        //Debug.LogWarning("Golem hit" + damage);
+    }
     // Get input values for player movement
     void OnMove(InputValue value) {
         moveInput = value.Get<Vector2>();

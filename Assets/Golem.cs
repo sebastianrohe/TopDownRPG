@@ -6,7 +6,7 @@ public class Golem : MonoBehaviour
 {
     Animator animator;
     bool isAlive = true;
-
+    bool isAttacking = false;
     public float Health {
         set {
 
@@ -28,15 +28,19 @@ public class Golem : MonoBehaviour
     public void Start() {
         animator = GetComponent<Animator>();
         animator.SetBool("isAlive", isAlive);
+
     }
-
+    
+   
     public float health = 3;
-
+   
     void OnHit(float damage) {
         Health -= damage;
-        //Debug.LogWarning("Golem hit" + damage);
     }
-
+    void StartAttacking(float damage) {
+        isAttacking = true;
+        Health -= damage;
+    }
     void DespawnGolem() {
         Destroy(gameObject);
     }
