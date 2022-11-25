@@ -46,17 +46,21 @@ public class PlayerController : MonoBehaviour
             // Accelerate the player while run direction is pressed
             // BUT don't allow player to run faster than the max speed in any direction
             rb.velocity = Vector2.ClampMagnitude(rb.velocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
+            //rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+
 
             // Control whether looking left or right
             if (moveInput.x > 0) {
                 transform.eulerAngles = new Vector3(0, 0, 0);
             } else if (moveInput.x < 0) {
-                transform.eulerAngles = new Vector3(0, 180, 0);
+                //transform.eulerAngles = new Vector3(0, 180, 0);
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+                //transform.position = new Vector3(-0.4f, 0, 0);
             }
             IsMoving = true;
         } else {
             // No movement so interpolate velocity towards 0
-            rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, idleFriction);
+            rb.velocity = Vector2.zero;
             IsMoving = false;
         }
     }
