@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Golem : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class Golem : MonoBehaviour
     public Rigidbody2D rb;
     public float walkSpeed;
     public bool isMoving = true;
+
+
+    public float percentOfLife =4;
+    public Image[] LifeBar;
+    public Sprite fullLifeBar;
+    public Sprite emptyLifeBar;
+
 
     Collider2D golemCollider;
     Animator animator;
@@ -33,7 +41,8 @@ public class Golem : MonoBehaviour
             return health;
         }
     }
-
+     
+    
     public void Start() {
         animator = GetComponent<Animator>();
         animator.SetBool("isAlive", isAlive);
@@ -47,18 +56,43 @@ public class Golem : MonoBehaviour
        if (isPatroling) {
             Patroling();
         }
+
+      
+    
+       
+        if (health > percentOfLife) {
+            health = percentOfLife;
+        }
+        for (int i = 0; i < LifeBar.Length; i++) {
+
+            if (i < percentOfLife) {
+                LifeBar[i].sprite = emptyLifeBar;
+            } else {
+                LifeBar[i].sprite = fullLifeBar;
+            }
+
+
+            if (i < percentOfLife) {
+                LifeBar[i].enabled = true;
+            } else {
+                LifeBar[i].enabled = false;
+            }
+        } 
     }
 
     void Patroling() {
+
         if (isMoving) {
             rb.velocity = new Vector2(walkSpeed * Time.fixedDeltaTime, rb.velocity.y);
+
         }
     }
     
    
-    public float health = 3;
+    public float health = 4;
    
     void OnHit(float damage) {
+        print(damage);
         Health -= damage;
     }
     void StartAttacking(float damage) {

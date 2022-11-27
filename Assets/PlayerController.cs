@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     bool IsMoving {
@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate() {
+      
 
         if (canMove == true && moveInput != Vector2.zero) {
             // Move animation and add velocity
@@ -63,8 +64,28 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             IsMoving = false;
         }
+
+        if (health > numOfHearts) {
+            health = numOfHearts;
+        }
+        for (int i = 0; i < hearts.Length; i++) {
+
+            if(i < health) {
+                hearts[i].sprite = fullHeart;
+            } else {
+                hearts[i].sprite = emptyHeart;
+            }
+
+
+            if (i < numOfHearts) {
+                hearts[i].enabled = true;
+            } else {
+                hearts[i].enabled = false;
+            }
+        }
     }
     bool isAlive = true;
+
 
     public float Health {
         set {
@@ -84,8 +105,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public float health = 3;
+    public float health = 9;
+    public int numOfHearts;
 
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
     void OnHit(float damage) {
         Health -= damage;
         //Debug.LogWarning("Golem hit" + damage);
