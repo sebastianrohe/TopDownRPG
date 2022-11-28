@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController : MonoBehaviour {
     bool IsMoving {
         set {
             isMoving = value;
@@ -17,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float maxSpeed = 2f;
 
     // Each frame of physics, what percentage of the speed should be shaved off the velocity out of 1 (100%)
-    public float idleFriction = 0.9f;
+    // public float idleFriction = 0.9f;
 
     public GameObject hammerHitbox;
     Collider2D hammerCollider;
@@ -26,6 +25,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     Vector2 moveInput = Vector2.zero;
+    public Collider2D playerCollider;
 
     bool isMoving = false;
     bool canMove = true;
@@ -35,11 +35,11 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         hammerCollider = hammerHitbox.GetComponent<Collider2D>();
+        playerCollider = playerCollider.GetComponent<Collider2D>();
         animator.SetBool("isAlive", isAlive);
     }
 
     void FixedUpdate() {
-      
 
         if (canMove == true && moveInput != Vector2.zero) {
             // Move animation and add velocity
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
             // BUT don't allow player to run faster than the max speed in any direction
             rb.velocity = Vector2.ClampMagnitude(rb.velocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
             //rb.velocity = new Vector3(moveSpeed * Time.fixedDeltaTime, rb.velocity.y, rb.velocity.x);
-
+            //rb.AddForce(moveInput * moveSpeed * Time.fixedDeltaTime, ForceMode2D.Force);
 
             // Control whether looking left or right
             if (moveInput.x > 0) {
@@ -64,28 +64,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             IsMoving = false;
         }
-
-        if (health > numOfHearts) {
-            health = numOfHearts;
-        }
-        for (int i = 0; i < hearts.Length; i++) {
-
-            if(i < health) {
-                hearts[i].sprite = fullHeart;
-            } else {
-                hearts[i].sprite = emptyHeart;
-            }
-
-
-            if (i < numOfHearts) {
-                hearts[i].enabled = true;
-            } else {
-                hearts[i].enabled = false;
-            }
-        }
     }
     bool isAlive = true;
-
 
     public float Health {
         set {
@@ -105,12 +85,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public float health = 9;
-    public int numOfHearts;
+    public float health = 3;
 
-    public Image[] hearts;
-    public Sprite fullHeart;
-    public Sprite emptyHeart;
     void OnHit(float damage) {
         Health -= damage;
         //Debug.LogWarning("Golem hit" + damage);
@@ -130,5 +106,13 @@ public class PlayerController : MonoBehaviour
 
     void UnlockMovement() {
         canMove = true;
+    }
+
+    void DestroyPlayerCollider() {
+        Destroy(playerCollider);
+    }
+
+    void DespawnPlayer() {
+        Destroy(gameObject);
     }
 }

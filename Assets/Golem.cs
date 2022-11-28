@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Golem : MonoBehaviour
-{
+public class Golem : MonoBehaviour {
+    [SerializeField]
+    DetectionZone detectionZone;
 
-    public bool isPatroling = true;
-    public Rigidbody2D rb;
-    public float walkSpeed;
-    public bool isMoving = true;
+    [SerializeField]
+    AttackingZone attackingZone;
 
-
-    public float percentOfLife =4;
-    public Image[] LifeBar;
-    public Sprite fullLifeBar;
-    public Sprite emptyLifeBar;
-
+    [SerializeField]
+    GameObject golemAttackHitbox;
 
     Collider2D golemCollider;
     Animator animator;
+
+    public Rigidbody2D rb;
+
+    public float walkSpeed = 1f;
+    public float health = 3;
+
     bool isAlive = true;
-    //bool isAttacking = false;
+    bool isAttacking = false;
+    public bool isPatroling = true;
+    public bool isMoving = false;
+
     public float Health {
         set {
             // If golem looses health set trigger for hurt animation
@@ -30,69 +34,56 @@ public class Golem : MonoBehaviour
             }
 
             health = value;
-          
+
             // If golem dies
-            if(health <= 0) {
+            if (health <= 0) {
+                //Destroy(golemCollider);
                 animator.SetBool("isAlive", false);
-                isMoving = false;
+                isAlive = false; // Set bool to false to stop following player when golem is dead
+                isMoving = false; // Set bool to false to stop moving in general when golem is dead
             }
         }
         get {
             return health;
         }
     }
-     
-    
+
     public void Start() {
         animator = GetComponent<Animator>();
         animator.SetBool("isAlive", isAlive);
         golemCollider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         //isPatroling = true;
-        animator.SetBool("isMoving", true);
+        animator.SetBool("isMoving", false);
     }
 
     void FixedUpdate() {
-       if (isPatroling) {
-            Patroling();
-        }
-
-      
-    
-       
-        if (health > percentOfLife) {
-            health = percentOfLife;
-        }
-        for (int i = 0; i < LifeBar.Length; i++) {
-
-            if (i < percentOfLife) {
-                LifeBar[i].sprite = emptyLifeBar;
-            } else {
-                LifeBar[i].sprite = fullLifeBar;
+        // If in agrozone follow player and set attack triggers
+        if (isAlive && detectionZone.detectedObjs.Count > 0) {
+            // Calculate direction to target object
+            Vector2 direction = (detectionZone.detectedObjs[0].transform.position - transform.position).normalized;
+            animator.SetBool("isMoving", true);
+            //animator.SetBool("isAttacking", true);
+            if (attackingZone.detectedObjs.Count > 0) {
+                animator.SetBool("isAttacking", true);
             }
-
-
-            if (i < percentOfLife) {
-                LifeBar[i].enabled = true;
-            } else {
-                LifeBar[i].enabled = false;
+            if (attackingZone.detectedObjs.Count == 0) {
+                animator.SetBool("isAttacking", false);
             }
-        } 
+            //animator.SetBool("isAttacking", true);
+            // Move towards detected object
+            if (direction.x > 0) {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            } else if (direction.x < 0) {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+            rb.AddForce(direction * walkSpeed * Time.fixedDeltaTime);
+        } else {
+            animator.SetBool("isMoving", false);
+        }
     }
 
-    void Patroling() {
-
-        if (isMoving) {
-            rb.velocity = new Vector2(walkSpeed * Time.fixedDeltaTime, rb.velocity.y);
-
-        }
-    }
-    
-   
-    public float health = 4;
-   
     void OnHit(float damage) {
-        print(damage);
         Health -= damage;
     }
     void StartAttacking(float damage) {
@@ -107,10 +98,10 @@ public class Golem : MonoBehaviour
         Destroy(golemCollider);
     }
 
-    void OnCollisionEnter2D(Collision2D col) {
-        isPatroling = false;
-        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-        walkSpeed *= -1;
-        isPatroling = true;     
-    }
+    //TODO: Patrol
+    //void Patroling() {
+    //    if (isMoving) {
+    //        rb.velocity = new Vector2(walkSpeed * Time.fixedDeltaTime, rb.velocity.y);
+    //    }
+    //}
 }
