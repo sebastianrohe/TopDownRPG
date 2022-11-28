@@ -8,7 +8,6 @@ public class DetectionZone : MonoBehaviour {
     // When object is detected, it is added to the list of actively detected objects
     public List<Collider2D> detectedObjs = new List<Collider2D>();
 
-
     // Detect when object enters range
     void OnTriggerEnter2D(Collider2D collider) {
         if (collider.gameObject.tag == tagTarget) {

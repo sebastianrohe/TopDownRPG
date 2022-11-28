@@ -19,16 +19,22 @@ public class PlayerController : MonoBehaviour {
     // public float idleFriction = 0.9f;
 
     public GameObject hammerHitbox;
-    Collider2D hammerCollider;
+    public float health = 3;
+    public int numOfHearts;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+    public Collider2D playerCollider;
 
+    Collider2D hammerCollider;
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
     Vector2 moveInput = Vector2.zero;
-    public Collider2D playerCollider;
 
     bool isMoving = false;
     bool canMove = true;
+    bool isAlive = true;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -40,16 +46,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-
         if (canMove == true && moveInput != Vector2.zero) {
             // Move animation and add velocity
-
             // Accelerate the player while run direction is pressed
             // BUT don't allow player to run faster than the max speed in any direction
             rb.velocity = Vector2.ClampMagnitude(rb.velocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
             //rb.velocity = new Vector3(moveSpeed * Time.fixedDeltaTime, rb.velocity.y, rb.velocity.x);
             //rb.AddForce(moveInput * moveSpeed * Time.fixedDeltaTime, ForceMode2D.Force);
-
             // Control whether looking left or right
             if (moveInput.x > 0) {
                 transform.eulerAngles = new Vector3(0, 0, 0);
@@ -64,8 +67,26 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = Vector2.zero;
             IsMoving = false;
         }
+
+        if (health > numOfHearts) {
+            health = numOfHearts;
+        }
+        for (int i = 0; i < hearts.Length; i++) {
+
+            if (i < health) {
+                hearts[i].sprite = fullHeart;
+            } else {
+                hearts[i].sprite = emptyHeart;
+            }
+
+
+            if (i < numOfHearts) {
+                hearts[i].enabled = true;
+            } else {
+                hearts[i].enabled = false;
+            }
+        }
     }
-    bool isAlive = true;
 
     public float Health {
         set {
@@ -84,8 +105,6 @@ public class PlayerController : MonoBehaviour {
             return health;
         }
     }
-
-    public float health = 3;
 
     void OnHit(float damage) {
         Health -= damage;
