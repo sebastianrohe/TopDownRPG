@@ -13,20 +13,27 @@ public class Golem : MonoBehaviour {
     [SerializeField]
     GameObject golemAttackHitbox;
 
+    [SerializeField]
+    private int golemExpValue = 50;
+
     Collider2D golemCollider;
     Animator animator;
 
     public Rigidbody2D rb;
 
     public float walkSpeed = 1f;
-    public float health = 3;
+    public int health = 3;
+
+    public Image[] HPBar;
+    public Sprite fullHP;
+    public Sprite emptyHP;
 
     bool isAlive = true;
     bool isAttacking = false;
     public bool isPatroling = true;
     public bool isMoving = false;
 
-    public float Health {
+    public int Health {
         set {
             // If golem looses health set trigger for hurt animation
             if (value < health) {
@@ -82,15 +89,18 @@ public class Golem : MonoBehaviour {
             animator.SetBool("isMoving", false);
         }
     }
-
-    void OnHit(float damage) {
+   
+    void OnHit(int damage) {
+        HPBar[health].enabled = false;
         Health -= damage;
+        HPBar[health].enabled = true;
     }
-    void StartAttacking(float damage) {
+    void StartAttacking(int damage) {
         //isAttacking = true;
         Health -= damage;
     }
     void DespawnGolem() {
+        GameObject.Find("ExpBar").GetComponent<PlayerExperience>().CurrentExperience += golemExpValue;
         Destroy(gameObject);
     }
 

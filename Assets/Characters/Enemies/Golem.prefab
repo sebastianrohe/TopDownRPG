@@ -379,10 +379,10 @@ GameObject:
   - component: {fileID: 5587771366387940079}
   - component: {fileID: 8259351906527728540}
   - component: {fileID: 4992023098346236489}
-  - component: {fileID: 2658953809103391319}
+  - component: {fileID: 1803825768}
   m_Layer: 0
   m_Name: Golem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,7 +451,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 2099523314, guid: d1ccc946695b7544aa23dcbcc70e2053, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -535,9 +535,17 @@ MonoBehaviour:
   detectionZone: {fileID: 1072851582462588397}
   attackingZone: {fileID: 3211067455552639540}
   golemAttackHitbox: {fileID: 3111416388190004062}
+  golemExpValue: 50
   rb: {fileID: 8923038945207083801}
-  walkSpeed: 50
+  walkSpeed: 60
   health: 3
+  HPBar:
+  - {fileID: 7939274141220612633}
+  - {fileID: 2467175748567739194}
+  - {fileID: 6723040946474500468}
+  - {fileID: 9077228204495477962}
+  fullHP: {fileID: 21300000, guid: d4809328236d19e4ba238b59edcb05d1, type: 3}
+  emptyHP: {fileID: 21300000, guid: 65aa4af1379324f489b24199d51e1760, type: 3}
   isPatroling: 1
   isMoving: 1
 --- !u!222 &4992023098346236489
@@ -548,7 +556,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4699361092111908240}
   m_CullTransparentMesh: 1
---- !u!114 &2658953809103391319
+--- !u!114 &1803825768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -568,7 +576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1624245190, guid: 3dd86250165c207448928b6e569a2423, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

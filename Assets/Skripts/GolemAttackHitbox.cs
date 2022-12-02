@@ -15,7 +15,9 @@ public class GolemAttackHitbox : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        print("Damage taken");
-        col.collider.SendMessage("OnHit", GolemDamage);
+        if(col.gameObject.CompareTag("Player") && col != null) {
+            col.collider.SendMessage("OnHit", GolemDamage);
+            print($"{this.gameObject.name} applied damage to {col.gameObject.name}");
+        }
     }
 }

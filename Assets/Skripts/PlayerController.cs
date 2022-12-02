@@ -108,7 +108,6 @@ public class PlayerController : MonoBehaviour {
 
     void OnHit(float damage) {
         Health -= damage;
-        //Debug.LogWarning("Golem hit" + damage);
     }
     // Get input values for player movement
     void OnMove(InputValue value) {

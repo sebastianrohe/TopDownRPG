@@ -14,7 +14,10 @@ public class HammerHitbox : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        col.collider.SendMessage("OnHit", hammerDamage);
+        if(col.gameObject.CompareTag("Enemy") && col != null) {
+            col.collider.SendMessage("OnHit", hammerDamage);
+            print($"{this.gameObject.name} applied damage to {col.gameObject.name}");
+        }
     }
 
 }
