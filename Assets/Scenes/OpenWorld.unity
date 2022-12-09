@@ -5137,6 +5137,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6037264893672004448, guid: 2e521f46baa171448bc10d037b932422, type: 3}
   m_PrefabInstance: {fileID: 6037264895265214981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &306754948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3618569043030201774, guid: 2e521f46baa171448bc10d037b932422, type: 3}
+  m_PrefabInstance: {fileID: 6037264895265214981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c23c0f8c62614047be1692cd2ff129c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &372580241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,6 +5825,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535716502}
   m_CullTransparentMesh: 1
+--- !u!114 &556285728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1463061268577566104, guid: 2e521f46baa171448bc10d037b932422, type: 3}
+  m_PrefabInstance: {fileID: 6037264895265214981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d9f53478c3df944908767ae4231bd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &556951181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30664,6 +30686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf646d4867bdca499a2e942a2fad4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerController: {fileID: 306754948}
+  HammerHitbox: {fileID: 556285728}
   experienceBar: {fileID: 1160908249}
   experienceNeeded: 100
   currentExperience: 0
