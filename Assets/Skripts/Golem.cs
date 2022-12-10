@@ -93,7 +93,8 @@ public class Golem : MonoBehaviour {
     void OnHit(int damage) {
         HPBar[health].enabled = false;
         Health -= damage;
-        HPBar[health].enabled = true;
+
+        if(health >= 0) HPBar[health].enabled = true;
     }
     void StartAttacking(int damage) {
         //isAttacking = true;

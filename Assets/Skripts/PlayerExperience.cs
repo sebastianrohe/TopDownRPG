@@ -8,14 +8,14 @@ using UnityEngine.UI;
 
 class PlayerExperience : MonoBehaviour {
 
-    [SerializeField] private  PlayerController PlayerController;
-    [SerializeField] private  HammerHitbox HammerHitbox;
+    [SerializeField] private PlayerController PlayerController;
+    [SerializeField] private HammerHitbox HammerHitbox;
     [SerializeField] private Image experienceBar;
     [SerializeField] private int experienceNeeded;
     [SerializeField] private int currentExperience;
-     // private float experienceValue = 0;
+    // private float experienceValue = 0;
     public int CurrentExperience {
-        set { 
+        set {
             if (value >= experienceNeeded) {
                 OnLevelUp();
                 currentExperience = 0;
@@ -31,9 +31,9 @@ class PlayerExperience : MonoBehaviour {
         }
     }
 
-
     private void Start() {
         experienceBar.fillAmount = currentExperience / experienceNeeded;
+        OnLevelUp();
     }
 
     private void OnLevelUp() {
