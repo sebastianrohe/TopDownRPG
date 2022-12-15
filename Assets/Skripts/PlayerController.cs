@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //
     public float moveSpeed = 2f;
     public float maxSpeed = 2f;
 
@@ -111,7 +110,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Check if the player pressed the E key
+        /*// Check if the player pressed the E key
         if (Input.GetKeyDown(KeyCode.E))
         {
             // Calculate the direction and distance of the dash
@@ -120,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
             // Move the player in the dash direction by the dash distance
             transform.position += dashDirection * dashDistance;
-        }
+        }*/
     }
 
 
