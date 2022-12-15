@@ -33,7 +33,7 @@ class PlayerExperience : MonoBehaviour {
 
     private void Start() {
         experienceBar.fillAmount = currentExperience / experienceNeeded;
-        OnLevelUp();
+        
     }
 
     private void OnLevelUp() {
